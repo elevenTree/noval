@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body {
+	margin: 0;
+	padding: 0;
+	font: 18px  "Sylfaen","\5FAE\8F6F\96C5\9ED1","Microsoft YaHei";
+	background: #ddd;
+/*	min-width: 640px;*/
+}
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, blockquote, p {
+	padding: 0;
+	margin: 0;
+}
+table, td, tr, th {
+	font-size: 14px;
+}
+li {
+	list-style-type: none;
+}
+img {
+	vertical-align: top;
+	border: 0;
+}
+ol, ul {
+	list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 12px;
+	font-weight: normal;
+}
+address, cite, code, em, th {
+	font-weight: normal;
+	font-style: normal;
+}
+
+.mt10{
+	margin-top:10px;
+}
+
+.mt40{
+	margin-top:40px;
+}
+
+.mt50{
+	margin-top:50px;
+}
+
+.mr10{
+	margin-right:10px;
+}
+.fB {
+	font-weight: bold;
+}
+.f12px {
+	font-size: 12px;
+}
+.f14px {
+	font-size: 14px;
+}
+.f20px {
+	font-size: 20px;
+}
+.f25px {
+	font-size: 25px;
+}
+.f30px {
+	font-size: 30px;
+}
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+a {
+
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+
+	text-decoration:none;
+}
+.clear{
+	clear: both;
+}
+
+.cursorPoint{
+	cursor: pointer;
+}
+
+.rd{color:#CD181D;}
+input {
+	font-family: "\5FAE\8F6F\96C5\9ED1", "Microsoft YaHei";
+}
+.textC{
+	text-align: center;
+}
+
+table{
+	width:100%;
+	text-align:center;/*文本居中*/
+	border-collapse:collapse; /*表格的边框合并，如果相邻，则共用一个边框*/
+	border-spacing:0; /*设置行与单元格边框的间距。当表格边框独立（即border-collapse:separate;）此属性才起作用*/
+}
+
+table td{
+	word-break: break-all; /*允许在字内换行,即单词可分*/
+	word-wrap:break-word;/*允许长单词或URL地址换行*/
+	border-right:none;
+	font:500 14px Arial;
+}

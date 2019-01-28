@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Hello MUI</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<!--标准mui.css-->
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/mui.min.css">
+	<link rel="stylesheet" href="../css/icons-extra.css">
+
+	<!--App自定义的css-->
+	<!--<link rel="stylesheet" type="text/css" href="../css/app.css"/>-->
+
+	<style>
+
+		.mui-icon-extra{
+			color:#FF3955;
+		}
+		.mui-icon:before{
+			color:#FF3955;
+			font-weight: bold;
+		}
+
+	</style>
+</head>
+
+<body>
+<header class="mui-bar mui-bar-nav">
+	<!--<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>-->
+	<h1 class="mui-title mui-text-left">小说网</h1>
+
+	<span class="mui-icon mui-icon-extra mui-icon-extra-xiaoshuo mui-pull-right"></span>
+	<span class="mui-icon  mui-icon-contact  mui-pull-right"></span>
+
+
+</header>
+
+<div id="slider" class="mui-slider" >
+	<div class="mui-slider-group mui-slider-loop">
+		<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+		<div class="mui-slider-item mui-slider-item-duplicate">
+			<a href="#">
+				<img src="../images/yuantiao.jpg">
+			</a>
+		</div>
+		<!-- 第一张 -->
+		<div class="mui-slider-item">
+			<a href="#">
+				<img src="../images/shuijiao.jpg">
+			</a>
+		</div>
+		<!-- 第二张 -->
+		<div class="mui-slider-item">
+			<a href="#">
+				<img src="../images/muwu.jpg">
+			</a>
+		</div>
+		<!-- 第三张 -->
+		<div class="mui-slider-item">
+			<a href="#">
+				<img src="../images/cbd.jpg">
+			</a>
+		</div>
+		<!-- 第四张 -->
+		<div class="mui-slider-item">
+			<a href="#">
+				<img src="../images/yuantiao.jpg">
+			</a>
+		</div>
+		<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+		<div class="mui-slider-item mui-slider-item-duplicate">
+			<a href="#">
+				<img src="../images/shuijiao.jpg">
+			</a>
+		</div>
+	</div>
+	<div class="mui-slider-indicator">
+		<div class="mui-indicator mui-active"></div>
+		<div class="mui-indicator"></div>
+		<div class="mui-indicator"></div>
+		<div class="mui-indicator"></div>
+	</div>
+</div>
+
+
+<div class="mui-input-row mui-search mt10">
+	<input type="search" class="mui-input-clear" placeholder="搜索">
+</div>
+
+
+<ul id="iconlist" class="mui-table-view mui-grid-view">
+	<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-3 iconlist clip">
+		<span class="mui-icon mui-icon-home"></span>
+		<div class="mui-media-body">首页</div>
+	</li>
+
+<!--	<li class="mui-table-view-cell mui-col-xs-2 mui-col-sm-2 iconlist clip">
+		<span class="mui-icon mui-icon-home"></span>
+		<div class="mui-media-body">书架</div>
+	</li>-->
+
+	<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-3 iconlist clip">
+		<span class="mui-icon mui-icon-extra mui-icon-extra-cart"></span>
+		<div class="mui-media-body">商城</div>
+	</li>
+
+	<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-3 iconlist clip">
+		<span class="mui-icon-extra mui-icon-extra-gift"></span>
+		<div class="mui-media-body">福利</div>
+	</li>
+
+	<li class="mui-table-view-cell mui-col-xs-3 mui-col-sm-3 iconlist clip">
+		<span class="mui-icon mui-icon-person"></span>
+		<div class="mui-media-body">我的</div>
+	</li>
+
+
+</ul>
+
+
+<div class="module"><!-- 模块标题 -->
+	<div class="module-header">
+		<div class="module-header-l"><h3 class="module-title">本期强推</h3></div>
+	</div>
+	<!-- 侧滑 -->
+	<div class="module-slide">
+		<ol class="module-slide-ol" role="listbox" title="水平列表，可以水平滚动">
+			<li class="module-slide-li"><a href="/book/7478351103195303" class="module-slide-a"><img
+					src="//bookcover.yuewen.com/qdbimg/349573/c_7478351103195303/150" class="module-slide-img"
+					alt="至尊瞳术师：绝世大小姐">
+				<figcaption class="module-slide-caption">至尊瞳术师：绝世大小姐</figcaption>
+				<p class="module-slide-author"><span class="clip">作者：</span><span class="gray">陌烟</span></p></a></li>
+			<li class="module-slide-li"><a href="/book/10644324304122603" class="module-slide-a"><img
+					src="//bookcover.yuewen.com/qdbimg/349573/c_10644324304122603/150" class="module-slide-img"
+					alt="独家婚宠：老公，别玩火">
+				<figcaption class="module-slide-caption">独家婚宠：老公，别玩火</figcaption>
+				<p class="module-slide-author"><span class="clip">作者：</span><span class="gray">潋紫沫</span></p></a></li>
+			<li class="module-slide-li"><a href="/book/9743170703944503" class="module-slide-a"><img
+					src="//bookcover.yuewen.com/qdbimg/349573/c_9743170703944503/150" class="module-slide-img"
+					alt="娇妻狠大牌：别闹，执行长！">
+				<figcaption class="module-slide-caption">娇妻狠大牌：别闹，执行长！</figcaption>
+				<p class="module-slide-author"><span class="clip">作者：</span><span class="gray">楠楠李</span></p></a></li>
+			<li class="module-slide-li"><a href="/book/11860659704956003" class="module-slide-a"><img
+					src="//bookcover.yuewen.com/qdbimg/349573/c_11860659704956003/150" class="module-slide-img"
+					alt="重生辣妻：傅爷，轻抱！">
+				<figcaption class="module-slide-caption">重生辣妻：傅爷，轻抱！</figcaption>
+				<p class="module-slide-author"><span class="clip">作者：</span><span class="gray">酥芽</span></p></a></li>
+			<li class="module-slide-li"><a href="/book/12087473303878803" class="module-slide-a"><img
+					src="//bookcover.yuewen.com/qdbimg/349573/c_12087473303878803/150" class="module-slide-img"
+					alt="闪婚厚爱：萧先生，一往情深">
+				<figcaption class="module-slide-caption">闪婚厚爱：萧先生，一往情深</figcaption>
+				<p class="module-slide-author"><span class="clip">作者：</span><span class="gray">二秋秋</span></p></a></li>
+			<li class="module-slide-li"><a href="/book/5216106804879703" class="module-slide-a"><img
+					src="//bookcover.yuewen.com/qdbimg/349573/c_5216106804879703/150" class="module-slide-img"
+					alt="田园娇宠：神医丑媳山里汉">
+				<figcaption class="module-slide-caption">田园娇宠：神医丑媳山里汉</figcaption>
+				<p class="module-slide-author"><span class="clip">作者：</span><span class="gray">蜜小棠</span></p></a></li>
+			<li class="module-slide-li"><a href="/book/11053463804274803" class="module-slide-a"><img
+					src="//bookcover.yuewen.com/qdbimg/349573/c_11053463804274803/150" class="module-slide-img"
+					alt="爵爷好凶猛：吻安，小甜妻">
+				<figcaption class="module-slide-caption">爵爷好凶猛：吻安，小甜妻</figcaption>
+				<p class="module-slide-author"><span class="clip">作者：</span><span class="gray">鱼酱二千</span></p></a></li>
+			<li class="module-slide-li"><a href="/book/10747362403228103" class="module-slide-a"><img
+					src="//bookcover.yuewen.com/qdbimg/349573/c_10747362403228103/150" class="module-slide-img"
+					alt="傻妻种田：山里汉子放肆亲">
+				<figcaption class="module-slide-caption">傻妻种田：山里汉子放肆亲</figcaption>
+				<p class="module-slide-author"><span class="clip">作者：</span><span class="gray">江茶茶</span></p></a></li>
+			<li class="module-slide-li"><a href="/book/4998878704813603" class="module-slide-a"><img
+					src="//bookcover.yuewen.com/qdbimg/349573/c_4998878704813603/150" class="module-slide-img"
+					alt="逆天九小姐：帝尊，别跑！">
+				<figcaption class="module-slide-caption">逆天九小姐：帝尊，别跑！</figcaption>
+				<p class="module-slide-author"><span class="clip">作者：</span><span class="gray">水清竹</span></p></a></li>
+			<li class="module-slide-li"><a href="/book/11704255304165603" class="module-slide-a"><img
+					src="//bookcover.yuewen.com/qdbimg/349573/c_11704255304165603/150" class="module-slide-img"
+					alt="帝国第一宠婚：总统，宠翻天">
+				<figcaption class="module-slide-caption">帝国第一宠婚：总统，宠翻天</figcaption>
+				<p class="module-slide-author"><span class="clip">作者：</span><span class="gray">梨落情殇</span></p></a></li>
+		</ol>
+	</div>
+
+
+	<div class="module"><!-- 模块标题 -->
+		<div class="module-header">
+			<div class="module-header-l"><h3 class="module-title">新书抢鲜</h3></div>
+			<div class="module-header-r"><a href="/new" class="module-header-btn">更多
+				<svg class="icon icon-arrow-r">
+					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-r"></use>
+				</svg>
+			</a></div>
+		</div>
+		<!-- 书介绍list -->
+		<ol class="book-ol book-ol-normal">
+			<li class="book-li"><a href="/book/7714285404371103" class="book-layout"><img
+					src="//bookcover.yuewen.com/qdbimg/349573/c_7714285404371103/150" class="book-cover"
+					alt="种田山里汉：神医美娇娘">
+
+				<div class="book-cell"><h4 class="book-title">种田山里汉：神医美娇娘</h4>
+
+					<p class="book-desc">
+						小神医魂穿一妻多夫的女尊王朝，原主臭名昭著，残暴不仁，身后留下一堆烂摊子。家徒四壁，茅屋漏雨，粮缸又已见了底。面对美貌的夫君，又瞅瞅丑不拉叽自己，她狂奔在一条通往钢牙小白兔的康庄大道上。敢觊觎她夫君？揍，没有拳头解决不了的事情！如果有，那就接着揍！穷？医术，香粉，布艺，美食，酒庄，生意做起来，铺子开起来，工人招起来，况且夫君很能耐，就不信她们一家过不上好日子。【12345，五个书友群已全部解散，正</p>
+
+					<div class="book-meta">
+						<div class="book-meta-l"><span class="book-author"><svg class="icon icon-human"><title>
+							作者</title>
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-human"></use>
+						</svg>高山日初</span></div>
+						<div class="book-meta-r"><span class="tag-small-group origin-right"><em
+								class="tag-small yellow">古代言情</em><em class="tag-small red">连载中</em><em
+								class="tag-small blue">111.37万</em></span></div>
+					</div>
+				</div>
+			</a></li>
+			<li class="book-li"><a href="/book/11206038303721603" class="book-layout"><img
+					src="//bookcover.yuewen.com/qdbimg/349573/c_11206038303721603/150" class="book-cover"
+					alt="农女火辣辣：神秘猎户宠翻天">
+
+				<div class="book-cell"><h4 class="book-title">农女火辣辣：神秘猎户宠翻天</h4>
+
+					<p class="book-desc">
+						（甜宠文）“小可爱，我想进去……”“可外面有人……”“没事，他们不会进来的。”顾子安轻声哄道。红豆无奈，古人的好奇心都这么大吗？超市逛了无数次，顾子安还是这么念念不忘。穿越前，红豆是身高五尺的女汉子；穿越后，红豆是身高不足四尺的小萝莉。极品欺负?红豆手握神力，打他们个措手不及。天灾不断?红豆吃穿不愁，还赚了百亩良田。嫁不出去?红豆身披嫁衣，从此一生一世一双人。（书友群:603672826）</p>
+
+					<div class="book-meta">
+						<div class="book-meta-l"><span class="book-author"><svg class="icon icon-human"><title>
+							作者</title>
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-human"></use>
+						</svg>虞人美</span></div>
+						<div class="book-meta-r"><span class="tag-small-group origin-right"><em
+								class="tag-small yellow">古代言情</em><em class="tag-small red">连载中</em><em
+								class="tag-small blue">105.42万</em></span></div>
+					</div>
+				</div>
+			</a></li>
+			<li class="book-li"><a href="/book/10626196404132503" class="book-layout"><img
+					src="//bookcover.yuewen.com/qdbimg/349573/c_10626196404132503/150" class="book-cover"
+					alt="最强丹师：腹黑帝尊，撩上瘾">
+
+				<div class="book-cell"><h4 class="book-title">最强丹师：腹黑帝尊，撩上瘾</h4>
+
+					<p class="book-desc">
+						端木夏美为了救好友，被至尊神器带到了异界，进入刚死不久的北国公府废材傻子小姐的身体里。从此废材逆袭，一晃变成绝世天才。天阶丹药，举世哄抢？不好意思，姐的天阶丹药都是我宠物的储备粮。至尊神兽，凤毛麟角？呵呵呵，姐来旅游时自带了异世至尊凶兽。各种异火，万金难求？啧啧，我这个小火苗是珍贵的变异种诶。斗渣姐恶弟，灭公主仙子！敌人亲友团太强大？没关系，且看本祭祀如何阴得你哭都哭不出来。牵走你家镇宗神兽，收刮</p>
+
+					<div class="book-meta">
+						<div class="book-meta-l"><span class="book-author"><svg class="icon icon-human"><title>
+							作者</title>
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-human"></use>
+						</svg>三宫娘娘</span></div>
+						<div class="book-meta-r"><span class="tag-small-group origin-right"><em
+								class="tag-small yellow">玄幻言情</em><em class="tag-small red">连载中</em><em
+								class="tag-small blue">142.01万</em></span></div>
+					</div>
+				</div>
+			</a></li>
+			<li class="book-li"><a href="/book/11857517804230103" class="book-layout"><img
+					src="//bookcover.yuewen.com/qdbimg/349573/c_11857517804230103/150" class="book-cover"
+					alt="萌宝征婚：爹地，快娶我妈咪！">
+
+				<div class="book-cell"><h4 class="book-title">萌宝征婚：爹地，快娶我妈咪！</h4>
+
+					<p class="book-desc">
+						宋音音惨遭同父异母的妹妹算计，落得不检点的骂名，母亲含怨病故。六年后她带儿子回国，小家伙竟在网络直播平台上为她公开征婚：“大家好，我是宋大白，我妈咪是宋音音，我爹地是……嘻嘻，我还缺个爹地！愿意当我爹地的帅蜀黍，快娶我妈咪吧！”几天后，那个令帝都无数女人为之疯狂着迷的钻石极品男出现，并从此将她缠上。【双处，1V1，甜宠文】</p>
+
+					<div class="book-meta">
+						<div class="book-meta-l"><span class="book-author"><svg class="icon icon-human"><title>
+							作者</title>
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-human"></use>
+						</svg>九霄云狐</span></div>
+						<div class="book-meta-r"><span class="tag-small-group origin-right"><em
+								class="tag-small yellow">现代言情</em><em class="tag-small red">连载中</em><em
+								class="tag-small blue">54.4万</em></span></div>
+					</div>
+				</div>
+			</a></li>
+		</ol>
+	</div>
+
+
+	<div class="module" data-l1="5"><!-- 模块标题 -->
+		<div class="module-header">
+			<div class="module-header-l"><h3 class="module-title">限时免费</h3></div>
+			<time id="time" class="time module-header-r" data-endtime="1547618399"><span class="time-day">00</span><span
+					class="time-hour">14</span><span class="time-minute">40</span><span class="time-second">32</span>
+			</time>
+		</div>
+		<!-- 侧滑 -->
+		<div class="module-slide">
+			<ol class="module-slide-ol" role="listbox" title="水平列表，可以水平滚动">
+				<li class="module-slide-li"><a href="/book/8809553204283703" class="module-slide-a"><span
+						class="corner blue"><em>限免</em></span><img
+						src="//bookcover.yuewen.com/qdbimg/349573/c_8809553204283703/150" class="module-slide-img"
+						alt="霸道小叔，请轻撩！">
+					<figcaption class="module-slide-caption">霸道小叔，请轻撩！</figcaption>
+					<p class="module-slide-author"><span class="clip">作者：</span><span class="gray">墨墨卿卿</span></p></a>
+				</li>
+				<li class="module-slide-li"><a href="/book/6696004104840603" class="module-slide-a"><span
+						class="corner blue"><em>限免</em></span><img
+						src="//bookcover.yuewen.com/qdbimg/349573/c_6696004104840603/150" class="module-slide-img"
+						alt="豪门重生：法医娇妻别黑化">
+					<figcaption class="module-slide-caption">豪门重生：法医娇妻别黑化</figcaption>
+					<p class="module-slide-author"><span class="clip">作者：</span><span class="gray">扉秀</span></p></a>
+				</li>
+				<li class="module-slide-li"><a href="/book/4474701803852103" class="module-slide-a"><span
+						class="corner blue"><em>限免</em></span><img
+						src="//bookcover.yuewen.com/qdbimg/349573/c_4474701803852103/150" class="module-slide-img"
+						alt="冥冥之中喜欢你">
+					<figcaption class="module-slide-caption">冥冥之中喜欢你</figcaption>
+					<p class="module-slide-author"><span class="clip">作者：</span><span class="gray">姒城城</span></p></a>
+				</li>
+				<li class="module-slide-li"><a href="/book/8230320504184003" class="module-slide-a"><span
+						class="corner blue"><em>限免</em></span><img
+						src="//bookcover.yuewen.com/qdbimg/349573/c_8230320504184003/150" class="module-slide-img"
+						alt="99次逃婚：顾少，别乱来">
+					<figcaption class="module-slide-caption">99次逃婚：顾少，别乱来</figcaption>
+					<p class="module-slide-author"><span class="clip">作者：</span><span class="gray">一树樱花</span></p></a>
+				</li>
+			</ol>
+		</div>
+	</div>
+
+
+	<div class="module"><!-- 模块标题 -->
+		<div class="module-header">
+			<div class="module-header-l"><h3 class="module-title">编辑推荐</h3></div>
+		</div>
+		<!-- 侧滑 -->
+		<div class="module-slide">
+			<ol class="module-slide-ol" role="listbox" title="水平列表，可以水平滚动">
+				<li class="module-slide-li"><a href="/book/5336528003531301" class="module-slide-a"><img
+						src="//bookcover.yuewen.com/qdbimg/349573/c_5336528003531301/150" class="module-slide-img"
+						alt="毒医娘亲萌宝宝">
+					<figcaption class="module-slide-caption">毒医娘亲萌宝宝</figcaption>
+					<p class="module-slide-author"><span class="clip">作者：</span><span class="gray">苏晴儿</span></p></a>
+				</li>
+				<li class="module-slide-li"><a href="/book/10621606904814703" class="module-slide-a"><img
+						src="//bookcover.yuewen.com/qdbimg/349573/c_10621606904814703/150" class="module-slide-img"
+						alt="重生校园：帝少，很会撩">
+					<figcaption class="module-slide-caption">重生校园：帝少，很会撩</figcaption>
+					<p class="module-slide-author"><span class="clip">作者：</span><span class="gray">夏抖抖</span></p></a>
+				</li>
+				<li class="module-slide-li"><a href="/book/11125068004369103" class="module-slide-a"><img
+						src="//bookcover.yuewen.com/qdbimg/349573/c_11125068004369103/150" class="module-slide-img"
+						alt="天命凰谋">
+					<figcaption class="module-slide-caption">天命凰谋</figcaption>
+					<p class="module-slide-author"><span class="clip">作者：</span><span class="gray">MS芙子</span></p></a>
+				</li>
+				<li class="module-slide-li"><a href="/book/3619884204686403" class="module-slide-a"><img
+						src="//bookcover.yuewen.com/qdbimg/349573/c_3619884204686403/150" class="module-slide-img"
+						alt="重生军营之王牌军婚">
+					<figcaption class="module-slide-caption">重生军营之王牌军婚</figcaption>
+					<p class="module-slide-author"><span class="clip">作者：</span><span class="gray">直上青云</span></p></a>
+				</li>
+				<li class="module-slide-li"><a href="/book/7729173403796503" class="module-slide-a"><img
+						src="//bookcover.yuewen.com/qdbimg/349573/c_7729173403796503/150" class="module-slide-img"
+						alt="宁许情深不相负">
+					<figcaption class="module-slide-caption">宁许情深不相负</figcaption>
+					<p class="module-slide-author"><span class="clip">作者：</span><span class="gray">麻辣千金</span></p></a>
+				</li>
+				<li class="module-slide-li"><a href="/book/10993882203048403" class="module-slide-a"><img
+						src="//bookcover.yuewen.com/qdbimg/349573/c_10993882203048403/150" class="module-slide-img"
+						alt="封少太霸道：鲜妻乖乖受宠">
+					<figcaption class="module-slide-caption">封少太霸道：鲜妻乖乖受宠</figcaption>
+					<p class="module-slide-author"><span class="clip">作者：</span><span class="gray">沐霓裳</span></p></a>
+				</li>
+				<li class="module-slide-li"><a href="/book/10682814404895903" class="module-slide-a"><img
+						src="//bookcover.yuewen.com/qdbimg/349573/c_10682814404895903/150" class="module-slide-img"
+						alt="帝少宠婚成瘾：宝贝，不许撩">
+					<figcaption class="module-slide-caption">帝少宠婚成瘾：宝贝，不许撩</figcaption>
+					<p class="module-slide-author"><span class="clip">作者：</span><span class="gray">黎盛夏</span></p></a>
+				</li>
+				<li class="module-slide-li"><a href="/book/9551851103304103" class="module-slide-a"><img
+						src="//bookcover.yuewen.com/qdbimg/349573/c_9551851103304103/150" class="module-slide-img"
+						alt="隐婚娇妻，太撩人！">
+					<figcaption class="module-slide-caption">隐婚娇妻，太撩人！</figcaption>
+					<p class="module-slide-author"><span class="clip">作者：</span><span class="gray">艾维斯迪恩</span></p></a>
+				</li>
+				<li class="module-slide-li"><a href="/book/10606149603477303" class="module-slide-a"><img
+						src="//bookcover.yuewen.com/qdbimg/349573/c_10606149603477303/150" class="module-slide-img"
+						alt="重生1978：鬼瞳兵王，结婚吧">
+					<figcaption class="module-slide-caption">重生1978：鬼瞳兵王，结婚吧</figcaption>
+					<p class="module-slide-author"><span class="clip">作者：</span><span class="gray">梵茀</span></p></a>
+				</li>
+				<li class="module-slide-li"><a href="/book/8968197603272003" class="module-slide-a"><img
+						src="//bookcover.yuewen.com/qdbimg/349573/c_8968197603272003/150" class="module-slide-img"
+						alt="奶爸的异界餐厅">
+					<figcaption class="module-slide-caption">奶爸的异界餐厅</figcaption>
+					<p class="module-slide-author"><span class="clip">作者：</span><span class="gray">轻语江湖</span></p></a>
+				</li>
+			</ol>
+		</div>
+	</div>
+
+	<div class="module"><!-- 模块标题 -->
+		<div class="module-header">
+			<div class="module-header-l"><h3 class="module-title">人气完本</h3></div>
+			<div class="module-header-r"><a href="/finish" class="module-header-btn">更多
+				<svg class="icon icon-arrow-r">
+					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-r"></use>
+				</svg>
+			</a></div>
+		</div>
+		<!-- 书介绍list -->
+		<ol class="book-ol book-ol-normal">
+			<li class="book-li"><a href="/book/4126378004633903" class="book-layout"><img
+					src="//bookcover.yuewen.com/qdbimg/349573/c_4126378004633903/150" class="book-cover" alt="亿万盛宠只为你">
+
+				<div class="book-cell"><h4 class="book-title">亿万盛宠只为你</h4>
+
+					<p class="book-desc">
+						他们是青梅竹马，在家人的算计下订了婚，还要同住一间房，共睡一张床。那晚，她不小心被灌醉，他意乱情迷中吻了她，然后便食髓知味，时不时地玩偷袭。一次意外，他的“罪行”终于被发现，她指控他，他却笑说，“你是我老婆，我为什么不能亲你？”两人的日常就是斗斗小嘴，互怼互损。他嘴上说嫌弃她，实际心里在意得要命，看她跟别的男生亲近，他就醋劲大发，索性把她绑在自己身边，成为他一个人的专属。（原名《恶魔的专属：丫头，</p>
+
+					<div class="book-meta">
+						<div class="book-meta-l"><span class="book-author"><svg class="icon icon-human"><title>
+							作者</title>
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-human"></use>
+						</svg>默小水</span></div>
+						<div class="book-meta-r"><span class="tag-small-group origin-right"><em
+								class="tag-small yellow">浪漫青春</em><em class="tag-small red">已完结</em><em
+								class="tag-small blue">350.83万</em></span></div>
+					</div>
+				</div>
+			</a></li>
+			<li class="book-li"><a href="/book/22107686000253102" class="book-layout"><img
+					src="//bookcover.yuewen.com/qdbimg/349573/c_22107686000253102/150" class="book-cover" alt="嫡女重生记">
+
+				<div class="book-cell"><h4 class="book-title">嫡女重生记</h4>
+
+					<p class="book-desc">
+						在家是小透明，嫁人后是摆设，最后葬身火海尸骨无存，这是韩玉熙上辈子的写照。重活一世，韩玉熙努力上进，只愿不再做陪衬与花瓶，然后觅得如意郎君，平安富贵过一生。可惜事与愿违，嫁了个身负血海深仇的郎君，韩玉熙的人生开始翻天覆地，但她新的人生却是好事多磨，苦尽甘来。六月已完本小说：《重生之温婉》、《世家》。</p>
+
+					<div class="book-meta">
+						<div class="book-meta-l"><span class="book-author"><svg class="icon icon-human"><title>
+							作者</title>
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-human"></use>
+						</svg>六月浩雪</span></div>
+						<div class="book-meta-r"><span class="tag-small-group origin-right"><em
+								class="tag-small yellow">古代言情</em><em class="tag-small red">已完结</em><em
+								class="tag-small blue">765.52万</em></span></div>
+					</div>
+				</div>
+			</a></li>
+			<li class="book-li"><a href="/book/7262966303741603" class="book-layout"><img
+					src="//bookcover.yuewen.com/qdbimg/349573/c_7262966303741603/150" class="book-cover"
+					alt="帝国第一宠：君少撩妻100式">
+
+				<div class="book-cell"><h4 class="book-title">帝国第一宠：君少撩妻100式</h4>
+
+					<p class="book-desc">
+						他说：“嫁给我，我会疼你宠你，做一个合格的丈夫，为你遮风挡雨。”他是权倾天下的帝国唯一继承人，清贵无双，魅世倾城，传说中禁欲系男神。她是现实版落难的灰姑娘，在婚礼上被新郎抛弃，被家族逼迫无路时，是他拯救了她。第二次相救，她说：“君先生，我现在想以身相许，你还要我吗？”婚后，她虐渣，他心疼道：“打疼手了吗？”后来，她被他宠到极致，都说惹谁也不能惹君夫人，因为她是君先生心尖尖上的人。君先生魅惑无比，一</p>
+
+					<div class="book-meta">
+						<div class="book-meta-l"><span class="book-author"><svg class="icon icon-human"><title>
+							作者</title>
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-human"></use>
+						</svg>凤元糖果</span></div>
+						<div class="book-meta-r"><span class="tag-small-group origin-right"><em
+								class="tag-small yellow">现代言情</em><em class="tag-small red">已完结</em><em
+								class="tag-small blue">318.97万</em></span></div>
+					</div>
+				</div>
+			</a></li>
+			<li class="book-li"><a href="/book/22116362000978402" class="book-layout"><img
+					src="//bookcover.yuewen.com/qdbimg/349573/c_22116362000978402/150" class="book-cover"
+					alt="绝世神医：腹黑大小姐">
+
+				<div class="book-cell"><h4 class="book-title">绝世神医：腹黑大小姐</h4>
+
+					<p class="book-desc">
+						她是二十四世纪神医，一支银针，活死人，肉白骨。一夕穿越，成为王府人人喊打的大小姐。没有戒灵、骄横无能，身为王府嫡脉却被未婚夫带着新欢欺上门来？本是天之骄子，岂容尔等放肆！银针在手，天下我有！天玄地宝尽在她手，绝世功法信手拈来。叫你知道什么是打脸！神医到处，魂断九霄。不曾想，却救起了一只跟屁虫。他绝色妖异，手段狠辣，却对这个偶然救他一命的小家伙，情有独钟。“我们不熟。”某神医横眉冷对。某人邪魅一笑，</p>
+
+					<div class="book-meta">
+						<div class="book-meta-l"><span class="book-author"><svg class="icon icon-human"><title>
+							作者</title>
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-human"></use>
+						</svg>夜北</span></div>
+						<div class="book-meta-r"><span class="tag-small-group origin-right"><em
+								class="tag-small yellow">古代言情</em><em class="tag-small red">已完结</em><em
+								class="tag-small blue">319.46万</em></span></div>
+					</div>
+				</div>
+			</a></li>
+		</ol>
+	</div>
+
+	<footer class="footer"><!-- 登录提示模块 S -->
+		<div class="footer-backtop">
+			<div class="footer-backtop-cell jsGuestWrapper" style=""><strong>登录后获得更多特色功能</strong><span class="char-dot">·</span><a
+					href="javascript:" class="blue jsLogin">立即登录</a></div>
+		</div>
+		<!-- 登录提示模块 E --><!-- 底部信息 S -->
+		<div class="footer-link fuli-footer-link"><a href="/bookshelf/my" class="footer-link-a dark">书架</a><a href="/"
+																											  class="footer-link-a dark jsLogin">充值</a><a
+				href="/user/help" class="footer-link-a dark">帮助</a><a
+				href="//qidian.gtimg.com/XSReader/?redirect=http%3A%2F%2Fdown-update.qq.com%2Fqqreaderhb2017%2Fapksource%2FXSReader.apk"
+				class="footer-link-a dark jsDownloadLink">客户端</a></div>
+		<div class="footer-copy">copyright © 2002-2019</div>
+		<!-- 底部信息 S --></footer>
+
+	<script src="../js/mui.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+	mui.init({
+		swipeBack:false //启用右滑关闭功能
+	});
+	var slider = mui("#slider");
+	slider.slider({
+		interval: 5000
+	});
+</script>
+</body>
+
+</html>

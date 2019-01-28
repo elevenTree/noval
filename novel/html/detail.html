@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Hello MUI</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<!--标准mui.css-->
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/mui.min.css">
+	<link rel="stylesheet" href="../css/icons-extra.css">
+	<link rel="stylesheet" href="../css/detail.css">
+
+	<!--App自定义的css-->
+	<!--<link rel="stylesheet" type="text/css" href="../css/app.css"/>-->
+
+	<style>
+
+		.mui-icon-extra{
+			color:#FF3955;
+		}
+		.mui-icon:before{
+			color:#FF3955;
+			font-weight: bold;
+		}
+
+	</style>
+</head>
+
+<body>
+<header class="mui-bar mui-bar-nav">
+	<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	<h1 class="mui-title">小说网</h1>
+
+	<span class="mui-icon mui-icon-extra mui-icon-extra-xiaoshuo mui-pull-right"></span>
+	<span class="mui-icon  mui-icon-contact  mui-pull-right"></span>
+
+
+</header>
+
+<div class="page page-book-detail">
+	<div class="content">
+
+
+		<!-- 公用头部 S -->
+		<header id="header" class="header">
+
+
+
+			<a href="javascript:history.go(-1)" class="header-back jsBack">
+				<svg class="icon icon-arrow-l"><title>返回</title><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-l"></use></svg>
+			</a>
+
+
+
+			<h1 class="header-back-title">灵鼎</h1>
+
+
+
+			<div class="header-operate">
+
+
+				<a id="openSearchPopup" href="javascript:" class="icon icon-search" title="搜索">
+					<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use></svg>
+				</a>
+
+
+				<a id="openGuide" href="javascript:" class="icon icon-more" title="更多" data-rel="guide"></a>
+
+
+			</div>
+
+		</header>
+
+
+		<!-- 更多内容的导航 S -->
+		<div id="guide" class="guide">
+			<i id="guideOverlay" class="guide-overlay"></i>
+			<div class="guide-content">
+				<nav class="guide-nav">
+					<a href="/" class="guide-nav-a">
+						<i class="icon icon-home"></i>
+						<h4 class="guide-nav-h">首页</h4>
+					</a>
+					<a href="/category" class="guide-nav-a">
+						<i class="icon icon-sort"></i>
+						<h4 class="guide-nav-h">分类</h4>
+					</a>
+					<a href="/rank" class="guide-nav-a">
+						<i class="icon icon-rank"></i>
+						<h4 class="guide-nav-h">排行榜</h4>
+					</a>
+					<a href="/welfare" class="guide-nav-a">
+						<i class="icon icon-fuli"></i>
+						<h4 class="guide-nav-h">福利</h4>
+					</a>
+					<a href="/finish" class="guide-nav-a">
+						<i class="icon icon-end"></i>
+						<h4 class="guide-nav-h">完本</h4>
+					</a>
+					<a href="/user" class="guide-nav-a jsLogin">
+						<i class="icon icon-account"></i>
+						<h4 class="guide-nav-h">账户</h4>
+					</a>
+				</nav>
+				<div class="guide-footer">
+					<a href="/bookshelf/my" class="btn-primary" data-size="14">我的书架</a>
+				</div>
+			</div>
+		</div>
+		<!-- 更多内容的导航 E -->
+
+		<!-- 公用头部 E -->
+
+
+
+		<!-- 页面内容 S -->
+
+		<!-- 书大致介绍 -->
+		<div id="bookDetailWrapper" class="module module-merge book-detail-x" data-book-id="25439619000317301" data-chan-id="20014" data-author-id="5318297403191001" data-user-level="" data-book-type="" data-login-status="false">
+			<img src="//bookcover.yuewen.com/qdbimg/349573/c_25439619000317301/150" class="book-cover-blur" alt="灵鼎">
+			<div class="book-detail-info">
+				<div class="book-layout">
+
+					<img src="//bookcover.yuewen.com/qdbimg/349573/c_25439619000317301/150" class="book-cover" alt="灵鼎">
+					<div class="book-cell">
+						<h2 class="book-title">灵鼎</h2>
+						<div class="book-rand-a"><a href="javascript:;">心碎梦思迁</a></div>
+						<p class="book-meta">仙侠/修真文明<span class="char-pipe">|</span>793.04万字</p>
+						<p class="book-meta">200章<span class="char-pipe">|</span>1000元</p>
+					</div>
+				</div>
+				<div class="book-detail-btn" data-read-status="" data-bookshelf-status="">
+					<ul class="btn-group">
+						<li class="btn-group-cell"><a href="/book/25439619000317301/17129482845247186" class="btn-normal red" id="btnReadBook">免费试读</a></li>
+
+						<li class="btn-group-cell"><a href="javascript:" id="myCart" class="btn-normal white">分享好友</a></li>
+
+						<li class="btn-group-cell"><a href="javascript:" class="btn-normal white" id="btnAddToBookshelf" data-bookshelf-status="">加书架</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="module module-merge">
+			<!-- 书籍摘要 -->
+			<section id="bookSummary" class="book-summary">
+				<textarea hidden="">强烈推荐玄幻作品《狂武神帝》，欢迎大家阅读观看！&lt;br&gt;落魄少年被活埋意外获得逆天小鼎，化作他的本命法器，助他迅猛修炼，等级狂升，走上一条强悍的修真之路！</textarea>
+				<content>强烈推荐玄幻作品《狂武神帝》，欢迎大家阅读观看！<br>落魄少年被活埋意外获得逆天小鼎，化作他的本命法器，助他迅猛修炼，等级狂升，走上一条强悍的修真之路！</content>
+                    <span class="book-summary-more">
+                        <svg class="icon icon-arrow-r"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-r"></use></svg>
+                    </span>
+			</section>
+			<a href="/book/25439619000317301/catalog" class="book-meta book-status">
+				<div class="book-meta-l">
+					<strong class="book-spt">目录</strong>
+				</div>
+				<div class="book-meta-r">
+					<p class="gray ell">1年前<span class="char-dot">·</span>连载至推荐玄幻大作《狂武神帝》内容精彩纷呈，超越灵鼎。</p><svg class="icon icon-arrow-r"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-r"></use></svg>
+				</div>
+			</a>
+		</div>
+
+
+
+
+		<!-- 书友评价模板 S -->
+		<script id="tpl-user-info.html" type="text/ejs-template">
+
+			<div class="fans-li book-fans-me">
+				<img src="<%= data.avatar %>" class="fans-cover" alt="我的头像">
+				<div class="rel">
+
+					<% if (data.levelName) { %><em class="tag-honor <%= ['blue', 'dark', 'red', 'red', 'red', 'orange', 'orange', 'orange', 'yellow', 'yellow', 'yellow'][['作者', '盟主', '宗师', '掌门', '长老', '护法', '堂主', '舵主', '执事', '弟子', '学徒'].indexOf(data.levelName)] || 'gray' %>"><%= data.levelName %></em><% } %>
+
+				</div>
+				<p class="fans-name ell"><strong>我</strong>
+					<% if(data.userId !== -1 ) { %>
+					<% if(data.isFans == 0)  { %><span class="char-dot">·</span>未上榜</p><% } else { %>粉丝值<%= data.fansVal %> <% } %>
+				<% }  else { %>
+				<span class="char-dot">·</span>未登录</p>
+				<% } %>
+
+			</div>
+
+		</script>
+		<!-- 书书友评价模板 E -->
+
+
+		<!-- 书评模板 S -->
+		<script id="tpl-book-commnet.html" type="text/ejs-template">
+
+
+			<% for (var i = 0; i < data.threadList.length; i++) { var thread = data.threadList[i]; %>
+			<li class="book-li">
+				<a href="/book/<%= data.bookInfo.bookId %>/thread/<%= thread.threadId %>" class="book-layout">
+					<div class="book-author-vv">
+						<img class="book-author-avatar" src="<%= thread.avatar %>" alt="<%= thread.userName %>头像">
+					</div>
+					<div class="book-cell">
+						<div class="book-meta-comment">
+							<div class="book-meta-l"><%= thread.userName %><% if (thread.isAuthor) { %><em class="tag-solid blue">作者本人</em><% } %></div>
+							<div class="book-meta-r">
+								<% if (thread.isGood) { %><i class="icon-nice-comment">精华书评</i><% } %>
+								<%= thread.repNum %><svg class="icon icon-comment"><use xlink:href="#icon-comment"></use></svg>
+							</div>
+						</div>
+						<time class="book-comment-time"><%= thread.dateTime %></time>
+						<h4 class="<%= thread.type == '1' ? 'goldcmt' : '' %>"><%= thread.title %></h4>
+						<p class="book-comment-p"><%- typeof thread.content === 'string' ? thread.content.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/'/g, '&#39;').replace(/"/g, '&quot;').replace(/ /g, '&nbsp;').replace(/=/g, '&#61;').replace(/`/g, '&#96;').replace(/\r|\n|\r\n/gi, '<br>') : thread.content %></p>
+					</div>
+				</a>
+			</li>
+			<% } %>
+
+			<% if (!data.threadList.length > 0) { %>
+			<small class="null-x"><div class="null">暂无书评</div></small>
+			<% } %>
+
+		</script>
+		<!-- 书评模板 E -->
+
+		<!-- 广告模板 S -->
+		<script id="tpl-ba-tpl.html" type="text/ejs-template">
+			<a href="<%= data.adJumpUrl %>" class="module-ad">
+				<img src="<%= data.adImgUrl %>">
+			</a>
+		</script>
+		<!-- 广告模板 E -->
+
+		<!-- 广告 -->
+		<div class="mybook-game-ad">
+
+		</div>
+
+		<!-- 书评区 -->
+		<div class="module trigger-book-comment" id="book-commnet-container" data-load-status="loading">
+			<div class="module-header">
+				<div class="module-header-l">
+					<h3 class="module-title">热点资讯</h3>
+				</div>
+
+			</div>
+			<div class="module-content">
+				<!-- 列表们 -->
+				<ol class="book-ol book-ol-comment module-loading loading-animation" id="book-commnet-list-container" style="overflow: hidden;height:auto;">
+
+
+					<li class="book-li">
+						<a href="/book/25439619000317301/thread/303657602406023258" class="book-layout">
+							<div class="book-cell">
+								<p class="book-comment-p">我不再讲10088和10086的故事了，其实一前一后就是我们的民主进程，等于零。每一件事都一样，铁腕治霾我们不能讲反面的话，但河北乡间民众在村头街边生火取暖，因为屋里屋外一个温度。银行唯一能当的就是地产，这个大秦帝国的梦还能做多久？</p>
+							</div>
+						</a>
+					</li>
+
+					<li class="book-li">
+						<a href="/book/25439619000317301/thread/303657602406023258" class="book-layout">
+							<div class="book-cell">
+								<p class="book-comment-p">我不再讲10088和10086的故事了，其实一前一后就是我们的民主进程，等于零。每一件事都一样，铁腕治霾我们不能讲反面的话，但河北乡间民众在村头街边生火取暖，因为屋里屋外一个温度。银行唯一能当的就是地产，这个大秦帝国的梦还能做多久？</p>
+							</div>
+						</a>
+					</li>
+
+					<li class="book-li">
+						<a href="/book/25439619000317301/thread/303657602406023258" class="book-layout">
+							<div class="book-cell">
+								<p class="book-comment-p">我不再讲10088和10086的故事了，其实一前一后就是我们的民主进程，等于零。每一件事都一样，铁腕治霾我们不能讲反面的话，但河北乡间民众在村头街边生火取暖，因为屋里屋外一个温度。银行唯一能当的就是地产，这个大秦帝国的梦还能做多久？</p>
+							</div>
+						</a>
+					</li>
+
+
+				</ol>
+				<a href="/book/25439619000317301/forum" class="book-li-more book-li-more-comments">更多资讯</a>
+			</div>
+		</div>
+
+		<!-- 广告 -->
+
+
+
+
+		<!-- 作者的其他作品模板 S -->
+		<script id="tpl-friend-book.html" type="text/ejs-template">
+
+
+			<% for(var i=0; i < data.authorOtherBooks.length; i++) { var rate= data.authorOtherBooks[i] %>
+			<li class="module-slide-li">
+				<a href="/book/<%= rate.bid %>" class="module-slide-a">
+					<img src="<%= staticConf.domains.cover %>/qdbimg/349573/c_<%= rate.bid %>/150"" class="module-slide-img" alt="<%= rate.bName %>">
+					<figcaption class="module-slide-caption"><%= rate.bName %></figcaption>
+					<p class="module-slide-author"><%= rate.reason %></p>
+				</a>
+			</li>
+			<% } %>
+
+
+		</script>
+		<!-- 书书友评价模板 E -->
+
+		<!-- 书友还看过 -->
+		<div class="module" data-load-status="wait">
+			<div class="module-header">
+				<div class="module-header-l">
+					<h3 class="module-title">作家的其他作品</h3>
+				</div>
+			</div>
+			<div class="module-content">
+				<!-- 侧滑 -->
+				<div class="module-slide">
+					<ol class="module-slide-ol" id="book-friend-list-container" role="listbox" title="水平列表，可以水平滚动">
+
+
+
+						<li class="module-slide-li">
+							<a href="/book/4006970403171901" class="module-slide-a">
+								<img src="//bookcover.yuewen.com/qdbimg/349573/c_4006970403171901/150" "="" class="module-slide-img" alt="化仙">
+								<figcaption class="module-slide-caption">化仙</figcaption>
+								<p class="module-slide-author"></p>
+							</a>
+						</li>
+
+
+
+					</ol>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="module">
+			<div class="module-header">
+				<div class="module-header-l">
+					<h3 class="module-title">版权信息</h3>
+				</div>
+			</div>
+			<div class="module-content">
+				<div class="book-copyright">
+					<p>上架时间:2015-11-24</p>
+					<p>版权:小说阅读网</p>
+					<p>本书由小说阅读网电子版制作与发行</p>
+					<p>版权所有·侵权必究</p>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+</div>
+
+
+
+	<footer class="footer"><!-- 登录提示模块 S -->
+		<div class="footer-backtop">
+			<div class="footer-backtop-cell jsGuestWrapper" style=""><strong>登录后获得更多特色功能</strong><span class="char-dot">·</span><a
+					href="javascript:" class="blue jsLogin">立即登录</a></div>
+		</div>
+		<!-- 登录提示模块 E --><!-- 底部信息 S -->
+		<div class="footer-link fuli-footer-link"><a href="/bookshelf/my" class="footer-link-a dark">书架</a><a href="/"
+																											  class="footer-link-a dark jsLogin">充值</a><a
+				href="/user/help" class="footer-link-a dark">帮助</a><a
+				href="//qidian.gtimg.com/XSReader/?redirect=http%3A%2F%2Fdown-update.qq.com%2Fqqreaderhb2017%2Fapksource%2FXSReader.apk"
+				class="footer-link-a dark jsDownloadLink">客户端</a></div>
+		<div class="footer-copy">copyright © 2002-2019</div>
+		<!-- 底部信息 S --></footer>
+
+	<script src="../js/mui.min.js"></script>
+
+</body>
+
+</html>
