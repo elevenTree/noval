@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Hello MUI</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<!--标准mui.css-->
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/mui.min.css">
+	<link rel="stylesheet" href="../css/icons-extra.css">
+
+
+	<!--App自定义的css-->
+	<!--<link rel="stylesheet" type="text/css" href="../css/app.css"/>-->
+
+	<style>
+
+		.mui-icon-extra{
+			color:#FF3955;
+		}
+		.mui-icon:before{
+			color:#FF3955;
+			font-weight: bold;
+		}
+		.userIcon{
+			display: block;
+			margin-left:15px;
+			height:4rem;
+			width:4rem;
+			border-radius: 2rem;
+		}
+		.nov-incoming {
+			margin-top:10px;
+			text-align: center;
+			border-bottom: 1px dashed #ccc;
+		}
+		.nov-incoming>div{
+			border-left: 1px dashed #ccc;
+		}
+		.nov-incoming>div:first-child{
+			border-left: none;
+		}
+
+		.nov-incoming p{
+			color: #f00;
+		}
+		.mr25{
+			margin-right:25px;
+		}
+		.userList{
+			padding:10px 0;
+			font-size:14px;
+			border-bottom:1px dashed #ccc;
+		}
+		.userList img{
+			margin-left:10px;
+			width: 50px;
+			height:50px;
+		}
+
+		.mui-navigate-right:after{
+			color:#f00;
+		}
+
+		.mui-segmented-control .mui-control-item {
+			color: #FF3955;
+			border-color: #FF3955;
+			border-left: 1px solid #FF3955;
+		}
+		.mui-segmented-control .mui-control-item.mui-active {
+			color: #fff;
+			background-color: #FF3955;
+		}
+
+		.mui-segmented-control {
+			border: 1px solid #FF3955;
+		}
+		.searHot a{
+			color:#666;
+
+		}
+	</style>
+</head>
+
+<body>
+<header class="mui-bar mui-bar-nav">
+	<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	<h1 class="mui-title">小说网</h1>
+
+	<span class="mui-icon mui-icon-extra mui-icon-extra-xiaoshuo mui-pull-right"></span>
+	<span class="mui-icon  mui-icon-contact  mui-pull-right"></span>
+
+</header>
+
+
+
+<div class="mui-content">
+
+	<div class="mui-input-row mui-search mt10">
+		<input type="search" class="mui-input-clear" placeholder="搜索">
+	</div>
+
+	<h5 class="mui-content-padded">标题一</h5>
+	<div class="mui-card">
+		<ul class="mui-table-view mui-grid-view">
+			<li class="mui-table-view-cell mui-media mui-col-xs-4">
+				<a href="#">
+					<img class="mui-media-object" src="../images/img/bookImg.jpg">
+					<div class="mui-media-body">幸福就是可以一起睡觉</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-4">
+				<a href="#">
+					<img class="mui-media-object" src="../images/img/bookImg.jpg">
+					<div class="mui-media-body">想要一间这样的木屋，静静的喝咖啡</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-4">
+				<a href="#">
+					<img class="mui-media-object" src="../images/img/bookImg.jpg">
+					<div class="mui-media-body">静静看这世界</div></a>
+			</li>
+		</ul>
+	</div>
+
+	<h5 class="mui-content-padded">标题二</h5>
+	<div class="mui-card">
+		<ul class="mui-table-view mui-grid-view">
+			<li class="mui-table-view-cell mui-media mui-col-xs-4">
+				<a href="#">
+					<img class="mui-media-object" src="../images/img/bookImg.jpg">
+					<div class="mui-media-body">幸福就是可以一起睡觉</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-4">
+				<a href="#">
+					<img class="mui-media-object" src="../images/img/bookImg.jpg">
+					<div class="mui-media-body">想要一间这样的木屋，静静的喝咖啡</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-4">
+				<a href="#">
+					<img class="mui-media-object" src="../images/img/bookImg.jpg">
+					<div class="mui-media-body">静静看这世界</div></a>
+			</li>
+		</ul>
+	</div>
+
+	<h5 class="mui-content-padded">标题三</h5>
+	<div class="mui-card">
+		<ul class="mui-table-view mui-grid-view">
+			<li class="mui-table-view-cell mui-media mui-col-xs-4">
+				<a href="#">
+					<img class="mui-media-object" src="../images/img/bookImg.jpg">
+					<div class="mui-media-body">幸福就是可以一起睡觉</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-4">
+				<a href="#">
+					<img class="mui-media-object" src="../images/img/bookImg.jpg">
+					<div class="mui-media-body">想要一间这样的木屋，静静的喝咖啡</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-4">
+				<a href="#">
+					<img class="mui-media-object" src="../images/img/bookImg.jpg">
+					<div class="mui-media-body">静静看这世界</div></a>
+			</li>
+		</ul>
+	</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+	<footer class="footer"><!-- 登录提示模块 S -->
+		<div class="footer-backtop">
+			<div class="footer-backtop-cell jsGuestWrapper" style=""><strong>登录后获得更多特色功能</strong><span class="char-dot">·</span><a
+					href="javascript:" class="blue jsLogin">立即登录</a></div>
+		</div>
+		<!-- 登录提示模块 E --><!-- 底部信息 S -->
+		<div class="footer-link fuli-footer-link"><a href="/bookshelf/my" class="footer-link-a dark">书架</a><a href="/"
+																											  class="footer-link-a dark jsLogin">充值</a><a
+				href="/user/help" class="footer-link-a dark">帮助</a><a
+				href="//qidian.gtimg.com/XSReader/?redirect=http%3A%2F%2Fdown-update.qq.com%2Fqqreaderhb2017%2Fapksource%2FXSReader.apk"
+				class="footer-link-a dark jsDownloadLink">客户端</a></div>
+		<div class="footer-copy">copyright © 2002-2019</div>
+		<!-- 底部信息 S --></footer>
+
+	<script src="../js/mui.min.js"></script>
+
+
+<script>
+	mui.init({
+		swipeBack: true //启用右滑关闭功能
+	});
+	(function($) {
+		$('#scroll').scroll({
+			indicators: true //是否显示滚动条
+		});
+		var segmentedControl = document.getElementById('segmentedControl');
+		$('.mui-input-group').on('change', 'input', function() {
+			if (this.checked) {
+				var styleEl = document.querySelector('input[name="style"]:checked');
+				var colorEl = document.querySelector('input[name="color"]:checked');
+				if (styleEl && colorEl) {
+					var style = styleEl.value;
+					var color = colorEl.value;
+					segmentedControl.className = 'mui-segmented-control' + (style ? (' mui-segmented-control-' + style) : '') + ' mui-segmented-control-' + color;
+				}
+			}
+		});
+	})(mui);
+</script>
+
+</body>
+
+</html>
